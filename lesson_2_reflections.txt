@@ -1,0 +1,11 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+a new directory, .git, is created in the cwd but nothing is committed. It’s needed
+because the files in .git track the versions of your files so it needs to be
+created.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+There aren’t any actual files stored in the staging area. It offers the benefit of 
+separating your commits so you can group them logically and have appropriate commit
+messages. 
