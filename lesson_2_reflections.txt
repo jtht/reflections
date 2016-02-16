@@ -9,3 +9,7 @@ How is the staging area different from the working directory and the repository?
 There aren’t any actual files stored in the staging area. It offers the benefit of 
 separating your commits so you can group them logically and have appropriate commit
 messages. 
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+By reviewing it using git status and seeing the difference between the current staging area and the working directory by using git diff. Then once I’ve seen what I’ve staged I can compare the current commit (HEAD?) to the staging area and see the changes to be sure it’s one logical change.
