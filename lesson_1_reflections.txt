@@ -1,0 +1,37 @@
+Using diff to find the differences between two files
+helped me in seeing the bug because it highlighted
+the lines that were different in the two files so I could
+immediately see the files which I had been working on
+and therefore could contain the bug.
+
+As a result I didn’t have to search through the file manually
+at each place I had been working.
+
+If I have to change a bunch of stuff in case I want to refactor
+or just experiment and it all goes to shit I can just restore a
+previous version of the document instead of retracing my steps
+and changing everything back
+
+When your project is saved automatically at certain intervals you have better
+protection against data loss if you don’t manually save changes frequently enough.
+However the versions that are saved could be nonsense, i.e. they don’t compile
+because it was saved when you were in the middle of writing a line of code. The
+version history will also be less useful since the commits aren’t logically seperated
+and won’t have comments explaining what the difference is between this version and
+other ones. It’s also more cluttered with more saves.
+
+version controls which allow saving multiple files in one commit do so because the
+files can be interdependent. Those that don’t allow saving multiple files in one
+commit do so because the files aren’t dependent.
+
+Start by using git log to find the relevant commit id’s and then use git diff on those commit id’s to see the differences between the versions
+
+I’d be more confident in making changes that might break something because I can
+always revert to an older version that was working. Using git checkout I can 
+easily test the older version for a working version and either restore that or 
+find the bugs using diff
+
+I want to use git for my projects to keep them safe (another layer of protection) and organized. Also I’m very impressed with the version control aspect of the whole thing
+and really want to be able to use it so I don’t have to be ass hesitant when I want
+to make sweeping changes to my code, I really like to experiment with my code but
+it’s hard when you can’t save a particular version
