@@ -13,3 +13,7 @@ messages.
 How can you use the staging area to make sure you have one commit per logical change?
 
 By reviewing it using git status and seeing the difference between the current staging area and the working directory by using git diff. Then once I’ve seen what I’ve staged I can compare the current commit (HEAD?) to the staging area and see the changes to be sure it’s one logical change.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+If I want to experiment with/develop a new feature I can make a new branch that clearly shows my intentions
